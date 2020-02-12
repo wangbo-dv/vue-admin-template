@@ -98,6 +98,22 @@ export const constantRoutes = [{
       }
     }]
   },
+
+  //mine页面
+  {
+    path:'/',
+    component:Layout,
+    children:[
+      {
+        path:'mine',
+        name:'mine',
+        component:()=>import("@/views/mine/mine"),
+        meta:{
+          title:'个人中心'
+        }
+      }
+    ]
+  },
   // 404 page must be placed at the end !!!
   {
     path: '*',

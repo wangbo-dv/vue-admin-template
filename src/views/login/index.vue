@@ -128,6 +128,8 @@ export default {
           this.$router.push({ path: "/" });
         } else {
           console.log("验证失败");
+          alert("用户名或者密码错误")
+          this.$router.push({ path: "/" })
         }
       });
       return 0;
